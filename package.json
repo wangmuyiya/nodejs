@@ -1,0 +1,14 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:wangmuyiya/nodejs.git",
+  "author": "wangmuyiya <1147863864@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.6.1"
+  },
+  "devDependencies": {
+    "ora": "^6.1.2"
+  }
+}

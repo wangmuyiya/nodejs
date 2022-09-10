@@ -6,6 +6,8 @@
   "author": "wangmuyiya <1147863864@qq.com>",
   "license": "MIT",
   "dependencies": {
+    "etag": "^1.8.1",
+    "express": "^4.18.1",
     "jquery": "^3.6.1"
   },
   "devDependencies": {

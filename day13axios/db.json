@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "title": "js",
+      "author": "laowang",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "title": "math",
+      "author": "laoli"
+    },
+    {
+      "id": 3,
+      "play": "玩儿",
+      "what": "玩蛋去"
+    },
+    {
+      "id": 4,
+      "play": "玩儿",
+      "what": "玩蛋去"
+    },
+    {
+      "title": "vue",
+      "author": "laowang",
+      "id": 5
+    },
+    {
+      "title": "vue",
+      "author": "laowang",
+      "id": 6
+    },
+    {
+      "title": "vue",
+      "author": "laowang",
+      "id": 7
+    },
+    {
+      "title": "vue",
+      "author": "laowang",
+      "id": 8
+    }
+  ],
+  "comments": [
+    {
+      "id": 2,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

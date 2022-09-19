@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        Person.prototype.do = function () {
+            console.log("核酸检测");
+        }
+        // new 做了哪些事情
+        // 1. 创建一个对象  并返回
+        // 2. 将实例化对象的this指向了该对象
+        // 3. 把对象的隐式原型对象指向了实例化的显式原型对象
+        // 4. 如果返回基本数据类型，不影响，返回引用数据类型，会影响返回值
+        function myNew(constr,...rest){
+            const obj = {}
+
+            // obj.call(constr)
+            const re = constr.apply(obj,rest)
+
+            obj.__proto__ = constr.prototype
+
+            if (typeof re === "function" || typeof re === "object" && re !== null) {
+                return re;
+            }
+
+            return obj
+        }
+        const p1 = myNew(Person, "laowang", 18);
+        console.log(p1)
+    </script>
+</body>
+</html>
